@@ -1,4 +1,4 @@
-<p align="center"><img src="http://satmaxt.xyz/theme/LikeEarth/assets/img/logo.png"></p>
+<p align="center"><img width="200px" src="http://satmaxt.xyz/theme/LikeEarth/assets/img/logo.png"></p>
 <p align="center"><strong>Satmaxt Developer - Perpustakaan Online</strong></p>
 
 ## Tentang Perpus Online
