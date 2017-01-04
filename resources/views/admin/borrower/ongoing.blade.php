@@ -8,6 +8,14 @@
         <div class="panel-heading">
            Daftar Peminjam Buku
         </div>
+        <form action="{{ route('borrower.search') }}" class="form-search" method="get">
+            <div class="input-group">
+              <input type="search" class="form-control" name="c" placeholder="Cari kode peminjam...">
+              <span class="input-group-btn" >
+                <button class="btn btn-default">Go!</button>
+              </span>
+            </div><!-- /input-group -->
+        </form>
         <div class="panel-body">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">

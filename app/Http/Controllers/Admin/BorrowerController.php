@@ -83,7 +83,8 @@ class BorrowerController extends Controller
     public function search()
     {
         if(!empty($_REQUEST['c'])) {
-            $data['results'] = Borrower::where('kode_pinjam', 'LIKE', '%'.$_REQUEST['c'].'%')->get();
+            $data['borrowers'] = Borrower::where('kode_pinjam', 'LIKE', '%'.$_REQUEST['c'].'%')->paginate(10);
+            $data['kode'] = $_REQUEST['c'];
             return view('admin.borrower.search', $data);
         }
     }

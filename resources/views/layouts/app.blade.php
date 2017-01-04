@@ -17,6 +17,10 @@
         .container {
             max-width: 960px;
         }
+        .form-search {
+            margin: 10px 0;
+            padding: 5px 20px;
+        }
     </style>
     <!-- Scripts -->
     <script>

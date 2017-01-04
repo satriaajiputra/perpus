@@ -9,6 +9,14 @@
            Hasil Cari kode : {{ $kode }}
         </div>
         <div class="panel-body">
+            <form action="{{ route('borrower.search') }}" class="form-search" method="get">
+                <div class="input-group">
+                  <input type="search" class="form-control" placeholder="Cari kode peminjam..." name="c">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">Go!</button>
+                  </span>
+                </div><!-- /input-group -->
+            </form>
             <div class="table-responsive">
                 <table class="table table-bordered">
                     <thead>

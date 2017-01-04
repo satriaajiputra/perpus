@@ -9,6 +9,14 @@
            Daftar Peminjam Buku
         </div>
         <div class="panel-body">
+            <form action="{{ route('borrower.search') }}" class="form-search" method="get">
+                <div class="input-group">
+                  <input type="search" class="form-control" placeholder="Cari kode peminjam..." name="c">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default">Go!</button>
+                  </span>
+                </div><!-- /input-group -->
+            </form>
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation"><a href="{{ route('borrower.index',['status'=>'ongoing']) }}">Belum Dikembalikan</a></li>
